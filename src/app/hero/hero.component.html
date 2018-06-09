@@ -1,0 +1,47 @@
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { AppComponent } from './app.component';
+import { AngularFireModule} from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { NavbarComponent } from './navbar/navbar.component';
+import { HeroComponent } from './hero/hero.component';
+import { FooterComponent } from './footer/footer.component';
+import { Services } from '@angular/core/src/view';
+
+export const firebaseConfig = {
+
+  apiKey: "AIzaSyDjtOI8RjhDdlOFTTCGDruWM7C3COUT-T0",
+    authDomain: "dating-59bc2.firebaseapp.com",
+    databaseURL: "https://dating-59bc2.firebaseio.com",
+    projectId: "dating-59bc2",
+    storageBucket: "dating-59bc2.appspot.com",
+    messagingSenderId: "429825920962"
+    
+};
+
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    HeroComponent,
+    FooterComponent,
+
+  ],
+  imports: [
+    BrowserModule,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireAuthModule,
+    AngularFireDatabaseModule
+   ],
+  providers: [],
+  bootstrap: [AppComponent]
+ })
+export class AppModule { }
+
+
+
+
+
+

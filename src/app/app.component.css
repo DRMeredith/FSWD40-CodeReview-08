@@ -1,0 +1,31 @@
+ .blocks {
+  border: 2px solid red;
+   padding: 5px;
+  margin: 20px;
+  height: 250px;
+  width: 500px;
+  background-color: darkgray;
+  display: inline-flex;/*
+  grid-template-columns: 50% 50%; */
+}
+ 
+
+ .container .blocktxt {
+ 	padding-top: 5px;
+ 	padding-left: 20px;
+
+ }
+.container {
+	background-color: black;
+}
+body {
+	background-color: red;
+}
+
+span {
+
+}
+img{
+	height: 150px;
+	width: 150px;
+}
